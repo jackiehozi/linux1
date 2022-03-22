@@ -18,29 +18,29 @@ echo "" > $classe.csv
                 read note
 
                 if [ $note -eq 20 ];
-                    echo " Vous etes $nom; $prenom; votre note $note ,C'est parfait !" >> $classe.csv
+                    echo "  $nom; $prenom;$note;C'est parfait !" >> $classe.csv
             then
                 
                 elif [ $note -ge 18 ];
-                    echo "Vous etes $nom ;$prenom ;votre note $note, C'est parfait" >> $classe.csv
+                    echo "$nom; $prenom;$note;C'est parfait" >> $classe.csv
             then
                 
                 elif [ $note -ge 16 ];
-                    echo "Vous etes $nom; $prenom; votre note $note , C'est très bien" >> $classe.csv
+                    echo "$nom; $prenom;$note;C'est très bien" >> $classe.csv
             then
                     
                 elif [ $note -ge 14 ];
-                    echo "Vous etes $nom; $prenom ;votre note $note, C'est bien" >> $classe.csv
+                    echo "$nom; $prenom;$note;C'est bien" >> $classe.csv
             then
                     
                 elif [ $note -ge 12 ];
-                    echo "Vous etes $nom ;$prenom; votre note $note, C'est assez bien" >> $classe.csv
+                    echo "$nom; $prenom;$note;C'est assez bien" >> $classe.csv
             then
                     
                 elif [ $note -ge 10 ];
-                    echo "Vous etes $nom ;$prenom; votre note $note, c'est insuffisant" >> $classe.csv
-            then
-                    echo " Vous etes $nom ;$prenom; votre note $note, c'est très insuffisant" >> $classe.csv
+                    echo "$nom; $prenom;$note;c'est insuffisant" >> $classe.csv
+            then 
+                    echo "$nom; $prenom;$note;c'est très insuffisant" >> $classe.csv
             fi
             i++
         done
