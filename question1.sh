@@ -21,7 +21,7 @@ then
         echo "C'est assez bien"
 then
        
-    elif [ $n -ge 10 ];
+    elif [ $n -lt 10 ];
         echo "C'est insuffisant"
 then
         echo "C'est très insuffisant"
